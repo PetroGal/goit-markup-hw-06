@@ -199,12 +199,12 @@ img {
 
 .menu {
   position: fixed;
-  max-width: 320px;
+  width: 100%;
   top: 0;
-  position: absolute;
+
   background-color: #fff;
-  /* width: 100%; */
-  height: 100vh;
+  left: 0;
+  height: 100%;
   padding-top: 72px;
   padding-left: 16px;
   padding-bottom: 40px;
@@ -249,7 +249,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 
 .menu-paragraph-studio {
@@ -279,6 +279,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 48px;
 }
 
 .menu-address-link {
@@ -316,7 +317,7 @@ img {
 
 .menu-social-list {
   display: flex;
-  margin-top: auto;
+
   justify-content: center;
   gap: 40px;
 }
