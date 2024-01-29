@@ -201,7 +201,6 @@ img {
   position: fixed;
   width: 100%;
   top: 0;
-
   background-color: #fff;
   left: 0;
   height: 100%;
@@ -211,7 +210,6 @@ img {
   padding-right: 24px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   overflow: auto;
   opacity: 0;
   visibility: hidden;
@@ -317,8 +315,6 @@ img {
 
 .menu-social-list {
   display: flex;
-
-  justify-content: center;
   gap: 40px;
 }
 .social-list-item {
@@ -680,14 +676,18 @@ img {
 .footer-wrapper {
   display: flex;
   flex-direction: column;
-  /* align-items: baseline; */
+}
+
+.footer-top-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .footer-logo-wrapper {
   display: flex;
   flex-direction: column;
   /* margin-right: 120px; */
-  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -830,15 +830,12 @@ img {
 }
 
 .footer-form-button {
-  /* display: flex; */
-  /* justify-content: center; */
   min-width: 165px;
   height: 40px;
   display: flex;
   padding: 8px 24px;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  margin-right: 16px;
   border-radius: 4px;
   background-color: #4d5ae5;
   color: #ffffff;
@@ -850,7 +847,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
-  margin-left: 8px;
+  margin: 0 0;
 }
 
 .footer-subscribe-icon {
@@ -1113,13 +1110,15 @@ img {
   }
 
   .footer-wrapper {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 108px;
   }
 
   .footer-top-wrapper {
-    display: flex;
-    margin: 0 auto;
+    flex-direction: row;
+    margin: 0 0;
     gap: 24px;
   }
 
@@ -1139,6 +1138,10 @@ img {
   .footer-social-paragraph {
     display: unset;
     margin-bottom: 16px;
+  }
+
+  .footer-subscribe-wrapper {
+    margin: 0 0;
   }
 
   .footer-subscribe-paragraph {
@@ -1265,16 +1268,23 @@ img {
   }
 
   .footer-wrapper {
-    flex-direction: unset;
+    /* flex-direction: unset; */
+    gap: 0;
+
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 108px; */
   }
 
   .footer-top-wrapper {
     margin: unset;
+    gap: 0;
   }
 
   .footer-logo-wrapper {
     margin-bottom: unset;
-    margin-right: auto;
+    margin-right: 120px;
   }
 
   .footer-list-icons {
@@ -1287,6 +1297,12 @@ img {
 
   .footer-social-wrapper {
     margin-right: 80px;
+  }
+
+  .footer-social-paragraph {
+    display: flex;
+    justify-content: unset;
+    margin-bottom: 16px;
   }
 
   .section-portfolio {
